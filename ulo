@@ -462,12 +462,7 @@ lain_lain() {
         if ! grep -q 'ulimit -n' $path/etc/init.d/boot; then
             sed -i '/kmodloader/i\\tulimit -n 131072\n' $path/etc/init.d/boot
         fi
-        
-        wireless_mac80211="$path/lib/netifd/wireless/mac80211.sh"
-        [[ -f "${wireless_mac80211}" ]] && {
-            cp -f ${wireless_mac80211} ${wireless_mac80211}.bak
-            sed -i "s|iw |ipconfig |g" ${wireless_mac80211}
-        }
+
         rm -rf $path/lib/firmware/
         cp -rf $fwdriver_path/firmware $path/lib/
         chmod 777 $path/lib/firmware/*
