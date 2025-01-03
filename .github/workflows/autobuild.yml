@@ -110,7 +110,8 @@ jobs:
       - name: Download add-on kernel for s905x4
         run: |
           sudo wget -O core/kernel/6.6.66.tar.gz https://drive2.edikurbot.workers.dev/0:/6.6.66.zip
-          sudo tar xvfz core/kernel/6.6.66.tar.gz
+          sudo cd core/kernel
+          sudo tar -xvfz 6.6.66.tar.gz && sudo cd ../..
           sudo rm -R core/kernel/6.6.66.tar.gz
           
       - name: Building OpenWrt
