@@ -22,7 +22,7 @@ rootfs_path="./rootfs"
 fwdriver_path="./core/root/lib"
 
 # Kernel & Firmware Repository
-repos="https://github.com/armarchindo/ULO-repository"
+repos="https://github.com/edikurexe/ULO-repository"
 
 start_cnt=$SECONDS
 
