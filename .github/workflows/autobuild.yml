@@ -111,7 +111,7 @@ jobs:
         run: |
           sudo wget -O core/kernel/6.6.66.tar.gz https://drive2.edikurbot.workers.dev/0:/6.6.66.zip
           cd core/kernel
-          sudo tar -xzvf 6.6.66.tar.gz && sudo cd ../..
+          sudo tar -xzvf 6.6.66.tar.gz && cd ../..
           sudo rm -R core/kernel/6.6.66.tar.gz
           
       - name: Building OpenWrt
