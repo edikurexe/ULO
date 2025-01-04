@@ -109,7 +109,7 @@ jobs:
 
       - name: Download add-on kernel for s905x4
         run: |
-          sudo wget -O core/kernel/6.6.66.zip https://drive2.edikurbot.workers.dev/0:/6.6.66.zip
+          sudo wget -O core/kernel/6.6.66.zip https://drive3.edikurbot.workers.dev/0:/6.6.66.zip
           cd core/kernel
           sudo unzip 6.6.66.zip
           cd ../..
